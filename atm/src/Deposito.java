@@ -7,11 +7,13 @@
  *
  * @author Yoel
  */
-public class Deposito {
-    private double monto ;
-     
-    // metodo ejecutar
-    public void ejecutar(){
-        
+public class Deposito extends Transaccion{
+  public Deposito(int numeroCuentaUsuario,BaseDatosBanco baseDatosBancoATM  ){
+     super( numeroCuentaUsuario, baseDatosBancoATM );   
+    }
+    
+    @Override
+    public void ejecutar() {
+        System.out.println("Se deposito ");
     }
 }
