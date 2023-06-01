@@ -7,16 +7,15 @@
  *
  * @author Yoel
  */
-public class Retiro {
-   private double monto;
-   
-   
-   
-   
-   //metodo
-   public void ejecutar(){
-       
-   }
+public class Retiro extendes Transaccion {
+ public Retiro(int numeroCuentaUsuario,BaseDatosBanco baseDatosBancoATM  ){
+     super( numeroCuentaUsuario, baseDatosBancoATM );   
+    }
     
+    // metodos
+    @Override
+     public void ejecutar(){
+        System.out.println("Se retiro dinero");
+    }
    
 }
